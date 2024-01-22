@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        #todo-container {
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        #task-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .task-item input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        #task-input {
+            width: 70%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        #add-btn {
+            width: 30%;
+            padding: 8px;
+            box-sizing: border-box;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="todo-container">
+        <h2>To-Do App</h2>
+        <input type="text" id="task-input" placeholder="Enter your task...">
+        <button id="add-btn">Add</button>
+        <ul id="task-list"></ul>
+    </div>
+
+    <script type="module" src="todo.js"></script>
+</body>
+</html>
